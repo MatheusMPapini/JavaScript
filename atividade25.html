@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 25</title>
+</head>
+
+<body>
+    <h1>Faltas</h1>
+
+    <script>
+        let nome = parseFloat(prompt("Entre com o seu nome: "))
+        let faltas = parseFloat(prompt("Entre com as faltas: "))
+        let disciplina = parseFloat(prompt("Entre com o nome da disciplina: "))
+
+        let media = (faltas)
+
+        document.write("A média das faltas é: " + media + "<br>")
+
+        if (media >= 15) {
+            document.write("Vc está reprovado por falta" + "<br>")
+
+        } else if (media <= 14) {
+            document.write("Vc está aprovado" + "<br>")
+        }
+    </script>
+</body>
+
+</html>

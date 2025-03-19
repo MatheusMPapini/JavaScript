@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 30</title>
+</head>
+<body>
+
+    <h1>Número de maçãs</h1>
+
+    <script>
+        let quantidade = parseInt(prompt("Digite o número de maçãs compradas:"));
+
+        let precoPorMaca = quantidade < 12 ? 0.50 : 0.40;
+
+        let valorTotal = quantidade * precoPorMaca;
+
+        document.write("O valor total a ser pago é: " + valorTotal.toFixed(2))
+    </script>
+    
+</body>
+</html>

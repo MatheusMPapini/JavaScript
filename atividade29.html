@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 29</title>
+</head>
+
+<body>
+    <h1>Notas</h1>
+
+    <script>
+        let nome = parseFloat(prompt("Entre com o seu nome: "))
+        let nota = parseFloat(prompt("Entre com a nota: "))
+
+        let media = (nota)
+
+        document.write("A média da nota é: " + media + "<br>")
+
+        if (media >= 7) {
+            document.write("Vc está aprovado" + "<br>")
+
+        } else if (media <= 6) {
+            document.write("Vc está de recuperação" + "<br>")
+        }
+    </script>
+</body>
+
+</html>

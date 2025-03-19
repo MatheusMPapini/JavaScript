@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 24</title>
+</head>
+
+<body>
+    <h1>Ordem Crescente</h1>
+
+    <script>
+
+        let num1 = parseInt(prompt("Digite o primeiro número:"));
+        let num2 = parseInt(prompt("Digite o segundo número:"));
+        let num3 = parseInt(prompt("Digite o terceiro número:"));
+
+        let numeros = [num1, num2, num3];
+        numeros.sort((a, b) => a - b);
+
+        document.write("A ordem crescente dos números são: " + numeros)
+    </script>
+</body>
+
+</html>

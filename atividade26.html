@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 26</title>
+</head>
+
+<body>
+
+    <h1>Preço</h1>
+
+    <script>
+
+        let codigo = parseInt(prompt("Digite o código do produto:"));
+        let quantidade = parseInt(prompt("Digite a quantidade comprada:"));
+        let valorTotal = codigo * quantidade;
+
+        let produtos = {
+            101: { nome: "Produto A", preco: 5.0 },
+            102: { nome: "Produto B", preco: 3.0 },
+            103: { nome: "Produto C", preco: 8.0 },
+            104: { nome: "Produto D", preco: 10.0 }
+        };
+
+        document.write("Valor total a ser pago: " + valorTotal.toFixed(2));
+
+    </script>
+
+</body>
+
+</html>

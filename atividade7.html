@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+<body>
+
+    <h1>Salário base</h1>
+
+    <script>
+
+function calcularSalarioLiquido(salarioBase) {
+    
+    let comissao = salarioBase * 0.05;
+
+    let salarioLiquido = salarioBase + comissao;
+
+    return salarioLiquido;
+}
+
+let salarioBase = parseFloat(prompt("Digite o salário base do funcionário: "));
+
+let salarioLiquido = calcularSalarioLiquido(salarioBase);
+document.write("O salário líquido do funcionário é: " + salarioLiquido);
+
+    </script>
+</body>
+</html>
