@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 27</title>
+</head>
+
+<body>
+    <h1>Aposentadoria</h1>
+
+    <script>
+        let idade = prompt("Digite a sua idade: ")
+        let genero = prompt("Digite seu sexo: ")
+
+        document.write("Sua idade é: " + idade + "<br>")
+        document.write("Seu sexo é: " + genero + "<br>")
+
+        if (idade <= 60 && idade <= 65) {
+            document.write("você não pode se aposentar" + "<br>")
+        }
+        else if (idade >= 60 || idade >= 65) {
+            document.write("Você pode se aposentar" + "<br>")
+        }
+    </script>
+</body>
+
+</html>
