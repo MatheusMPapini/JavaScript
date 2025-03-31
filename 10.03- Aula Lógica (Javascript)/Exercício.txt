@@ -1,0 +1,25 @@
+Fritar um ovo:
+
+1- Abrir a geladeira;
+2- Pegar um ovo;
+3- Fecha a geladeira;
+4- Colocar o ovo na mesa;
+5- Abrir o armário;
+6- Pegar o éleo e a frigideira;
+7- Fechar o armário;
+8- Colocar a frigideira no fogão;
+9- Colocar o óleo na frigideira;
+10- Colocar o óleo na mesa;
+11- Ligar o gás;
+12- Ligar o fogo;
+13- Pegar o ovo;
+14- Quebrar e põe na frigideira;
+15- Jogar a casca no lixo;
+16- Deixar fritar por alguns minutos;
+17- Desligar o fogo;
+18- Desligar o gás;
+19- Esperar esfriar um pouco;
+20- Pegar um prato;
+21- Pegar uma espatula;
+22- Retirar o ovo da frigideira;
+23- Colocar no prato;

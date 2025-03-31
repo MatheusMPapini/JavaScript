@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando troca de conteúdo e formatação usando o javascript</title>
+    <style>
+        .fundo{
+            background-color: bisque;
+            color: rgb(70,4,4);
+            text-align: center;
+        }
+
+        .myImage{
+            width: 500px;
+            height: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="fundo">
+
+    <h1>Testando mudança de cor de fundo Body, a cor da fonte e a  imagem na página</h1>
+
+    <input type="button" id="verde" value="tema verde" onclick="verde()"/>
+    <input type="button" id="azul" value="tema azul" onclick="azul()"/>
+    <input type="button" id="home" value="tema home" onclick="home()"/>
+    
+    <hr />
+    
+    <img src="imagem/fundo.jpg" class="myImage" alt="Uma estrada de dentro da floresta"/>
+
+    <script>
+        function verde(){
+            document.querySelector(".fundo").style.backgroundColor="green";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myImage").src="imagem/fundo3.jpg";
+        }
+
+        function azul(){
+            document.querySelector(".fundo").style.backgroundColor="blue";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myImage").src="imagem/fundo3.jpg";
+        }
+
+        function home(){
+            document.querySelector(".fundo").style.backgroundColor="bisque";
+            document.querySelector(".fundo").style.color="rgb(70,4,4)";
+            document.querySelector(".myImage").src="imagem/fundo.jpg";
+        }
+    </script>
+
+</body>
+</html>

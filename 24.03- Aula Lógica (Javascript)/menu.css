@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+
+div {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    border: 5px double;
+    padding: 10px;
+    font-size: 12px;
+    font-family: Verdana;
+    text-align: justify;
+    top: 200px;
+    left: 360px;
+    visibility: hidden; /* oculta o elemento */
+}
+
+#camada1 {
+    background-color: antiquewhite;
+    color: brown;
+    border-color: brown;
+}
+
+#camada2 {
+    background-color: rgb(159, 229, 159);
+    color: green;
+    border-color: blue;
+}
+
+#camada3 {
+    background-color: blueviolet;
+    color: red;
+    border-color: yellow;
+}
+
+div img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    float: left;
+}

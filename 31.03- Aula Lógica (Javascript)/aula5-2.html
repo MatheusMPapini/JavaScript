@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando troca de conteúdo e formatação usando o javascript</title>
+    <style>
+        .fundo{
+            background-color: bisque;
+            color: rgb(70,4,4);
+            text-align: center;
+        }
+
+        .myImage{
+            width: 500px;
+            height: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="fundo">
+
+    <h1 id="titulo">Testando mudança de cor de fundo Body, a cor da fonte e a  imagem na página</h1>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic magnam laboriosam earum commodi illo suscipit amet totam est numquam, repellat corrupti perferendis, nihil provident deleniti magni. Hic dolorum possimus laboriosam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sed sunt enim possimus, accusamus ratione libero natus expedita ipsum nesciunt! Obcaecati ullam voluptatem rerum hic adipisci maiores suscipit, ab minima.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit non quas beatae amet. Optio beatae, nulla natus tempore facere cumque illo modi expedita porro dolorum sequi. Reiciendis sint nesciunt quas?
+    </p>
+
+    <input type="button" id="escuro" value="tema escuro" onclick="escuro()"/>
+    <input type="button" id="daltonico" value="modo daltonico" onclick="daltonico()"/>
+    <input type="button" id="normal" value="A-" onclick="normal()"/>
+    <input type="button" id="visao" value="A+" onclick="visao()"/>
+    <input type="button" id="verde" value="tema verde" onclick="verde()"/>
+    <input type="button" id="azul" value="tema azul" onclick="azul()"/>
+    <input type="button" id="home" value="tema home" onclick="home()"/>
+    
+    
+    <hr />
+    
+    <img src="imagem/fundo.jpg" class="myImage" alt="Uma estrada de dentro da floresta"/>
+
+    <script>
+
+        let texto = document.getElementById("titulo")
+
+        function verde(){
+            document.querySelector(".fundo").style.backgroundColor="green";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myImage").src="imagem/fundo3.jpg";
+
+            texto.innerHTML = "Testando a função VERDE!!!"
+        }
+
+        function azul(){
+            document.querySelector(".fundo").style.backgroundColor="blue";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myImage").src="imagem/fundo3.jpg";
+
+            texto.innerHTML = "Testando a função AZUL!!!"
+        }
+
+        function home(){
+            document.querySelector(".fundo").style.backgroundColor="bisque";
+            document.querySelector(".fundo").style.color="rgb(70,4,4)";
+            document.querySelector(".myImage").src="imagem/fundo.jpg";
+
+            texto.innerHTML = "Testando mudança de cor de fundo Body, a cor da fonte e a  imagem na página"
+        }
+
+        function escuro(){
+            document.querySelector(".fundo").style.backgroundColor="black";
+            document.querySelector(".fundo").style.color="gray";
+            document.querySelector(".myImage").src="imagem/fundo.jpg";
+
+            texto.innerHTML = "Testando Modo Escuro"
+        }
+
+        function daltonico(){
+            document.querySelector(".fundo").style.backgroundColor="pink";
+            document.querySelector(".fundo").style.color="green";
+            document.querySelector(".myImage").src="imagem/daltonismo.jpg";
+
+            texto.innerHTML = "Testando Modo Daltonico"
+        }
+
+        function visao(){
+            document.querySelector(".fundo").style.backgroundColor="white";
+            document.querySelector(".fundo").style.color="black";
+            document.querySelector(".fundo").style.fontSize="30px";
+            document.querySelector(".myImage").src="imagem/fundo.jpg";
+
+            texto.innerHTML = "Testando Modo Baixa Visão"
+        }
+
+        function normal(){
+            document.querySelector(".fundo").style.backgroundColor="white";
+            document.querySelector(".fundo").style.color="black";
+            document.querySelector(".fundo").style.fontSize="15px";
+            document.querySelector(".myImage").src="imagem/fundo.jpg";
+
+            texto.innerHTML = "Testando Modo Normal"
+        }
+
+    </script>
+
+</body>
+</html>

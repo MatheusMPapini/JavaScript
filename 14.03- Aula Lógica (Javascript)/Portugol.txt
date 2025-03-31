@@ -1,0 +1,52 @@
+programa {
+  funcao inicio() {
+    inteiro idade //declaração de uma variável do tipo int1eiro (números inteiros)
+    real altura //declaração de uma variável do tipo real (valor flutuante ou quebrado)
+    cadeia nome //declaração de uma variável do tipo string (letras e números)
+    logico resposta //declaração de uma variável do tipo booleano (verdadeiro ou falso)
+
+    idade = 52 //atribuição de valor na variável (instanciar)
+    altura = 1.78
+    nome = "Debora"
+    resposta = verdadeiro
+
+    escreva("Minha idade é: " + idade + "\n")
+    escreva("Minha altura é: " + altura + "\n")
+    escreva("Meu nome é: " + nome + "\n")
+    escreva("Minha resposta é: " + resposta)
+  }
+}
+
+
+
+
+
+programa {
+  funcao inicio() {
+    
+    inteiro numero1, numero2
+
+    escreva("Entre com o peimeiro número: ")
+    leia (numero1)
+
+    escreva("Entre com o segundo número: ")
+    leia (numero2)
+
+    inteiro soma = numero1 + numero2
+
+    escreva("A soma entre os dois números é: " + soma + "\n")
+
+    inteiro subtracao = numero1 - numero2
+
+    escreva("A subtração entre os dois números é: " + subtracao + "\n")
+
+    inteiro multiplicacao = numero1 * numero2
+
+    escreva("A multiplicação entre os dois números é: " + multiplicacao + "\n")
+
+    inteiro divisao = numero1 / numero2
+
+    escreva("A divisão entre os dois números é: " + divisao)
+
+  }
+}

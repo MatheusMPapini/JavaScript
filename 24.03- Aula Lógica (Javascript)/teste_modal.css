@@ -1,0 +1,70 @@
+h1 {
+    text-align: center;
+}
+
+.botao {
+    background-color: aqua;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    background-color: rgb(122, 254, 65);
+    box-shadow: 5px 5px 5px green;
+}
+
+.janela_escura {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(70, 50, 50, 80%);
+    visibility: hidden;
+}
+
+@keyframes abrir_modal{
+    from{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    to{
+        opacity: 1;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.modal, .imagem {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    animation-name: abrir_modal;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+.imagem {
+    width: 330px;
+    height: 330px;
+}
+
+.fechar {
+    width: 12px;
+    height:18px;
+    float: right;
+    cursor: pointer;
+    border: 1px solid;
+}
