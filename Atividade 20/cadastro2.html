@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro 2</title>
+</head>
+<body>
+
+    <script>
+        const hospedes = []
+        const maxhopedes = 15
+
+        function menu(){
+            let opcao
+            do{
+            opcao = prompt("Selecione uma opção: \n1. Cadastrar\n2. Pesquisar\n3. Sair")
+
+            switch (opcao){
+                case "1":
+                    cadastrarHospede()
+                    break
+                case "2":
+                    cadastrarHospede()
+                    break
+                case "3":
+                    alert("Saindo do programa...")
+                    break   
+                default:
+                    alert("Opção iválida!")
+            }
+            }while (opcao !== "3")
+        }
+
+        function cadastrarHospede(){
+            if(hospedes.length >= maxhopedes){
+                alert("Máximo de cadastros atingido")
+                return
+            }
+            const nome = prompt("Qual o nome do hóspede?")
+            if(nome){
+                hospedes.push(nome)
+                alert("Hóspede" + nome + "Foi cadastrado(a) com sucesso!")
+            }else{
+                alert("Nome inválido ")
+            }
+        }
+
+        function pesquisarHospede(){
+            const nome = prompt("Qual o nome do hóspede?")
+            if (hospedes.includes(nome)){
+                alert("Hóspede" + nome + "foi encontrado(a)")
+            }else{
+                alert("Hóspede" + nome + "não foi encontrado(a)")
+            }
+        }
+        menu()
+
+    </script>
+    
+</body>
+</html>
