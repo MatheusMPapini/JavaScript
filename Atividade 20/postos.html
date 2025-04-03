@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postos</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Qual seu nome? ")
+        let alcoolWayne = Number(prompt('Qual o preço do alcool na Wayne Oil? '))
+        let gasolinaWayne = Number(prompt('Qual o preço do gasolina na Wayne Oil? '))
+        let alcoolStark = Number(prompt('Qual o preço do alcool na Stark Petrol? '))
+        let gasolinaStark = Number(prompt('Qual o preço do alcool na Stark Petrol? '))
+
+        let tanque = 42
+
+        let custoAlcoolW = alcoolWayne * tanque 
+        let custoGasolinaW = gasolinaWayne * tanque
+        let custoAlcoolS = alcoolStark * tanque
+        let custoGasolinaS = gasolinaStark * tanque
+
+        let alcoolWdesconto = alcoolWayne <= (gasolinaWayne * 0.7)
+        let alcoolSdesconto = alcoolStark <= (gasolinaStark * 0.7)
+
+        let opcao
+        let preco
+        let posto
+
+        if (alcoolWdesconto && alcoolSdesconto){
+            preco = Math.min(custoAlcoolW, custoAlcoolS)
+            opcao = "Alcool"
+            posto = preco === custoAlcoolW ? 'Wayne Oil' : 'Stark Petrol'
+        } else if (alcoolWdesconto){
+            opcao = 'Alcool'
+            posto = "Wayne Oil"
+        } else if (alcoolSdesconto){
+            opcao = 'Alcool'
+            posto = 'Stark Petrol'
+        } else {
+            preco = Math.min(gasolinaWayne, gasolinaStark)
+            opcao = "gasolina"
+            posto = preco === gasolinaWayne ? 'Wayne Oil' : 'Stark Petrol'
+        }
+
+        alert(`${nome}, é mais barato abastercer com ${opcao} no posto ${posto}`)
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditório</title>
+</head>
+<body>
+
+    <script>
+       const capacidadeLaranja = 150
+       const capacidadeLaranjaAdicional = 70
+       const capacidadeColorado = 350
+
+       let convidados = parseFloat(prompt("Qual número de convidados para o seu evento?"))
+
+       if(convidados < 0 || convidados > 350){
+            alert("Número de convidados inválido.")
+       }else {
+            if(convidados <= capacidadeLaranja + capacidadeLaranjaAdicional){
+                if(convidados <= capacidadeLaranja){
+                    alert("Use o auditório Laranja")
+                }else{
+                    let cadeirasAdicionais = convidados - capacidadeLaranja
+                    alert(`Use o auditório Laranja (incluo mais ${cadeirasAdicionais} cadeiras)`)
+                }
+            }else if (convidados <= capacidadeColorado){
+                alert("Use o auditório Colorado")
+            }else{
+                alert("Quantidade de convidados superior à capacidade máxima.")
+              
+            }
+
+            let nome = prompt("Qual seu nome?")
+            let reserva = prompt("Gostaria de efetuar a reserva? S/N").toLocaleUpperCase()
+            
+            if (reserva === 'S'){
+                alert(`${nome}, Reserva efetuada com sucesso.`)
+            }else{
+                alert(`${nome}, Reserva não efetuada.`)
+            }
+       }
+
+    </script>
+    
+</body>
+</html>

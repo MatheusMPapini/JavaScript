@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <script>
+        function calcularReserva(){
+            let nome = prompt("Qual o seu nome?")
+            let duracaoEvento = parseInt(prompt("Qual a duração do evento em horas?"))
+            let quantidadeGarcons = parseInt(prompt("Quantos garçons serão necessários?"))
+
+            const custoPorHora = 10.50
+            let custoTotal = duracaoEvento * quantidadeGarcons * custoPorHora
+
+            alert(`O custo total é de ${(custoTotal).toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})}`)
+
+            let resposta = prompt("Gostaria de efetuar a reserva? S/N").toLocaleUpperCase()
+
+            if (resposta = "S"){
+                alert(nome + " Reserva efetuada com sucesso!")
+            }else{
+                alert("Reserva não efetuada.")
+            }
+
+        }
+        calcularReserva()
+    </script>
+</body>
+</html>

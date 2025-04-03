@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <script>
+        let diaSemana = prompt("Qual o dia do seu evento? ")
+        let hora = parseInt(prompt("Qual a hora do seu evento? "))
+
+
+
+
+        if (diaSemana == 'segunda' || diaSemana == 'terça' || diaSemana == 'quarta' || diaSemana == 'quinta' || diaSemana == 'sexta'  ) {
+            if (hora >= 7 && hora <= 23){
+                let empresa = prompt('Qual o nome da sua empresa? ')
+                alert(`Restaurante reservado para ${empresa}. ${diaSemana} às ${hora} horas.`)
+            } else {
+                alert(`Restaurante indisponivel`)
+            }
+
+        } else if (diaSemana == 'domingo' || diaSemana == 'sabado') {
+            if (hora >= 7 && hora <= 15) {
+                let empresa = prompt('Qual o nome da sua empresa? ')
+                alert(`Restaurante reservado para ${empresa}. ${diaSemana} às ${hora} horas.`)
+            } else {
+                alert(`Restaurante indisponivel`)
+            }
+        } else {
+            alert(`Esse dia é inválido!`)
+        }
+    </script>
+</body>
+</html>

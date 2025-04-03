@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffet</title>
+</head>
+<body>
+
+    <script>
+            let convidados = parseFloat(prompt("Qual o número de convidados para o evento?"))
+
+            if(convidados > 350){
+            alert("Quantidade de convidados superior à capacidade máxima.")
+        }else if (convidados < 350){
+            let cafe = 0.2 * convidados 
+            let agua = 0.5 * convidados
+            let salgados = 7 * convidados
+
+            let custoCafe = cafe * 0.08
+            let custoAgua = agua * 0.40
+            let custoSalgados = (salgados /100) * 34
+            let custoTotal = custoCafe + custoAgua + custoSalgados 
+
+            alert(`O evento precisará de ${(cafe).toFixed(2)} litros de café, ${(agua).toFixed(2)} litros de água, ${salgados} salgados.`)
+            alert(`O custo total do evento será de R$ ${(custoTotal).toFixed(2)}`)
+
+            let resposta = prompt("Gostaria de efetuar a reserva? S/N").toLocaleUpperCase()
+
+            if (resposta == 'S'){
+                alert("Reserva efetuada com sucesso!")
+            }else{
+                alert("Reserva não efetuada")
+            }
+        
+        }
+
+    </script>
+    
+</body>
+</html>

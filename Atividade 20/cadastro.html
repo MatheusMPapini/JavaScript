@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casdastro</title>
+</head>
+<body>
+
+    <script>
+        let diaria = 50
+        let gratuidade = 0
+        let meia = 0
+        let total = 0
+
+        while (true){
+            let nome = prompt("Qual o nome do hóspede?")
+            if(nome.toUpperCase() === "PARE") break;
+            
+            let idade = parseInt(prompt("Digite sua idade"))
+            if(idade < 0){
+                alert(nome + "Idade inválida ")
+        }
+        else if(idade>6){
+            alert(nome + "Cadastro com sucesso!." + nome + "Possui gratuidade.")
+            gratuidade++
+        }
+
+        else if (idade > 60){
+            alert(nome + "paga meia")
+            meia ++
+            total += diaria / 2
+        }else{
+            alert(nome + "Cadastro feito com sucesso!")
+            total += diaria
+        }
+    }
+
+    document.write("O valor total é: R$" + total + "," + gratuidade + "<br>" + "gratuidade e" + meia + "meias")
+    </script>
+    
+</body>
+</html>
