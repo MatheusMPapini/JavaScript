@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt('Digite um número: '))
+        var num2 = parseInt(prompt('Digite outro número: '))
+
+        while( num2 <= 0 ){
+            num2 = parseInt(prompt('Número Incorreto! Digite um número positivo(Maior que 0): '))
+        }
+        var div = num1 / num2
+
+        document.write('A divisão do primeiro número pelo segundo é: ' + div)
+
+    </script>
+</body>
+</html>

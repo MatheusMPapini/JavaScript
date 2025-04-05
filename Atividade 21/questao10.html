@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <script>
+        let N = parseInt(prompt("Digite um número para gerar as tabuadas: "));
+
+        if (N > 0) {
+            for (let i = 1; i <= N; i++) {
+                document.write("Tabuada do " + i + "<br>")
+
+                for (let j = 1; j <= 10; j++) {
+                    document.write(i + "X" + j + " = " + i * j + "<br>")
+                }
+            }
+        } else {
+            alert("Por favor, digite um valor maior que zero.");
+        }
+    </script>
+</body>
+</html>

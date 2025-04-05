@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let aprovados = 0;
+        let continuar = true;
+
+        while (continuar) {
+            let nota1 = Number(prompt("Digite a primeira nota do aluno:"));
+            let nota2 = Number(prompt("Digite a segunda nota do aluno:"));
+            
+            let media = (nota1 + nota2) / 2;
+            alert("Média final: " + media.toFixed(2));
+
+            if (media >= 9.5) {
+                alert("Aluno aprovado!");
+                aprovados++;
+            } else {
+                alert("Aluno reprovado.");
+            }
+
+            let resposta = prompt("Calcular a média de outro aluno? Sim/Não").toLowerCase();
+            continuar = resposta === "s";
+        }
+
+        alert("Quantidade de alunos aprovados: " + aprovados);
+
+    </script>
+</body>
+</html>
